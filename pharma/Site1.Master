@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="pharma.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table class="auto-style1">
+        <tr>
+            <td style="background-color: #00FFFF">
+                <h1 class="auto-style2">PHARMACY ONLINE</h1>
+            </td>
+        </tr>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            
+            <tr>
+                <td>
+                    <br />
+                </td>
+            </tr>
+            
+        </asp:ContentPlaceHolder> 
+        <tr>
+            <td class="auto-style2" style="background-color: #008080"><em>
+                <br />
+                Manage Your Stock With The New Digital Technologies<br />
+                <br />
+                </em></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
