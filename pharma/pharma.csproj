@@ -86,19 +86,18 @@
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="logo1.jpg" />
     <Content Include="refresh_icon.png" />
-    <Content Include="script.js" />
-    <Content Include="style.css" />
     <Content Include="Web.config" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
-    <Content Include="Home.aspx" />
+    <Content Include="Home1.aspx" />
     <Content Include="Brand.aspx" />
-    <Content Include="Brand2.aspx" />
-    <Content Include="Brand3.aspx" />
+    <Content Include="EditBrand.aspx" />
+    <Content Include="AddBrand.aspx" />
     <Content Include="Product.aspx" />
-    <Content Include="Product1.aspx" />
-    <Content Include="Product2.aspx" />
+    <Content Include="AddProduct.aspx" />
+    <Content Include="EditProduct.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -124,12 +123,19 @@
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Home1.aspx.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home1.aspx.designer.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Brand.aspx.cs">
       <DependentUpon>Brand.aspx</DependentUpon>
@@ -138,19 +144,19 @@
     <Compile Include="Brand.aspx.designer.cs">
       <DependentUpon>Brand.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Brand2.aspx.cs">
-      <DependentUpon>Brand2.aspx</DependentUpon>
+    <Compile Include="EditBrand.aspx.cs">
+      <DependentUpon>EditBrand.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Brand2.aspx.designer.cs">
-      <DependentUpon>Brand2.aspx</DependentUpon>
+    <Compile Include="EditBrand.aspx.designer.cs">
+      <DependentUpon>EditBrand.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Brand3.aspx.cs">
-      <DependentUpon>Brand3.aspx</DependentUpon>
+    <Compile Include="AddBrand.aspx.cs">
+      <DependentUpon>AddBrand.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Brand3.aspx.designer.cs">
-      <DependentUpon>Brand3.aspx</DependentUpon>
+    <Compile Include="AddBrand.aspx.designer.cs">
+      <DependentUpon>AddBrand.aspx</DependentUpon>
     </Compile>
     <Compile Include="Product.aspx.cs">
       <DependentUpon>Product.aspx</DependentUpon>
@@ -159,24 +165,25 @@
     <Compile Include="Product.aspx.designer.cs">
       <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Product1.aspx.cs">
-      <DependentUpon>Product1.aspx</DependentUpon>
+    <Compile Include="AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Product1.aspx.designer.cs">
-      <DependentUpon>Product1.aspx</DependentUpon>
+    <Compile Include="AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Product2.aspx.cs">
-      <DependentUpon>Product2.aspx</DependentUpon>
+    <Compile Include="EditProduct.aspx.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Product2.aspx.designer.cs">
-      <DependentUpon>Product2.aspx</DependentUpon>
+    <Compile Include="EditProduct.aspx.designer.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
+    <Content Include="Site2.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

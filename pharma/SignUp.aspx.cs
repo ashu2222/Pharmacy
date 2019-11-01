@@ -19,31 +19,44 @@ namespace pharma
         protected void Button1_Click(object sender, EventArgs e)
 
         {
-            try
+            bool isHuman = CaptchaBox.Validate(TxtCaptcha.Text);
+            TxtCaptcha.Text = null;
+            if (!isHuman)
             {
-
-                SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
-                conn.Open();//Add data to the sql database
-                string insertQuery = "insert into SignUp(Username, Password, Confirm Password)values (@Username,@Password,@Confirm Password)";
-                SqlCommand cmd = new SqlCommand(insertQuery, conn);
-                cmd.Parameters.AddWithValue("@Username", TextBox1.Text);
-                cmd.Parameters.AddWithValue("@Password", TextBox2.Text);
-                cmd.Parameters.AddWithValue("@Confirm Password", TextBox3.Text);
-
-                cmd.ExecuteNonQuery();
-
-                Response.Write("Student registeration Successfully!!!thank you");
-
-                conn.Close();
-
-            }//catch errors
-            catch (Exception ex)
-            {
-                Response.Write("error" + ex.ToString());
+                Label1.Text = "Invalid Captacha";
             }
-            Label1.Text = "Valid Captcha";
-            Response.Redirect("LogIn.aspx");
-        }
-    }
+            else
+            {
 
- }
+
+
+                try
+                {
+
+                    SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["Database2ConnectionString"].ConnectionString);
+                    conn.Open();//Add data to the sql database
+                    string insertQuery = "insert into SignUpTable(Username, Password, ConfirmPassword)values (@Username,@Password,@ConfirmPassword)";
+                    SqlCommand cmd = new SqlCommand(insertQuery, conn);
+                    cmd.Parameters.AddWithValue("@Username", Username.Text);
+                    cmd.Parameters.AddWithValue("@Password", Password.Text);
+                    cmd.Parameters.AddWithValue("@ConfirmPassword", ConfirmPassword.Text);
+
+                    cmd.ExecuteNonQuery();
+
+                    Response.Write("Student registeration Successfully!!!thank you");
+
+                    conn.Close();
+
+                }//catch errors
+                catch (Exception ex)
+                {
+                    Response.Write("error" + ex.ToString());
+                }
+
+                Response.Redirect("SignIn.aspx");
+
+            }
+        }
+
+    }
+}

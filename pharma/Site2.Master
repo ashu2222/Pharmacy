@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="pharma.Site2" %>
+
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        #main{width:auto;height:730px;}
+        #header{width:auto;height:115px;background-color:#00FFFF;}
+        #heading{width:40%;height:80px;margin-left:30%;margin-top:1%;}
+        #heading h1{text-align:center;}
+        #logo{width:10%;height:80px;float:right;}
+        #logo img{width:100%;height:95%;}
+        #logout{width:10%;height:30px;float:right;margin-top:1%;}
+        #navigation{width:auto;height:550px;}
+        #middle{width:auto;height:550px;}
+        #footer{width:auto;height:60px;background-color:#00FFFF;border:2px solid #00FFFF;}
+        
+        .auto-style3 {
+            margin-left: 40px;
+        }
+        .auto-style4 {
+            margin-left: 520px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+        </div>
+        <div id="main">
+            <div id="header">
+               <div id="logo">
+                   <img   src="logo1.jpg" />
+               </div>
+                <div id="heading">
+                    <h1>
+                        <em>PHARMACY ONLINE</em>
+                    </h1>
+                </div>
+                <div id="logout">
+                    <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/SignIn.aspx">Logout</asp:LinkButton>
+                </div>
+            </div>
+            <div id="navigation" style="background-image: url('/15.jpg')">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a href="Home1.aspx">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Brand.aspx">Brand</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="Product.aspx">Product</a><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
+                </asp:ContentPlaceHolder>
+            </div>
+            
+            <div id="footer">
+                
+                    <h3 class="auto-style4">
+                        <em>Manage Your Stock With The New Digital Technologies</em>
+                    </h3>
+               
+               
+            
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+

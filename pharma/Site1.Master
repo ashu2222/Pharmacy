@@ -14,13 +14,21 @@
         .auto-style2 {
             text-align: center;
         }
+        
+        .auto-style3 {
+            width: 109px;
+            height: 100px;
+        }
+        
     </style>
 </head>
 <body>
+    
     <table class="auto-style1">
         <tr>
             <td style="background-color: #00FFFF">
-                <h1 class="auto-style2">PHARMACY ONLINE</h1>
+                <h1 class="auto-style2">PHARMACY ONLINE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <img class="auto-style3" src="logo1.jpg" /></h1>
             </td>
         </tr>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
