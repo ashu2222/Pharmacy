@@ -2,14 +2,19 @@
 
 <!DOCTYPE html>
 
-<!DOCTYPE html>
 
 <html>
 <head runat="server">
+    
     <title></title>
+    
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    
     <style>
+        
+
         #main{width:auto;height:730px;}
         #header{width:auto;height:115px;background-color:#00FFFF;}
         #heading{width:40%;height:80px;margin-left:30%;margin-top:1%;}

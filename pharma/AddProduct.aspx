@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site2.Master" AutoEventWireup="true" CodeBehind="AddProduct.aspx.cs" Inherits="pharma.WebForm15" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    
+    
     <style type="text/css">
         .auto-style1 {
             margin-left: 400px;
